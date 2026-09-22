@@ -1,0 +1,18 @@
+/* Zivoc branding overrides - visual only, no core files touched */
+
+/* Hide default Frappe/ERPNext logo wherever it's rendered as an <img> with
+   the standard asset path, replaced by background-image below. */
+.navbar-brand img[src*="frappe"],
+.app-logo img[src*="frappe"],
+.login-content img[src*="frappe"] {
+	visibility: hidden;
+}
+
+.navbar-brand,
+.app-logo,
+.login-content .logo {
+	background-image: url("/assets/zivoc_branding/images/zivoc-logo.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+}
